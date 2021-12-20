@@ -1,0 +1,23 @@
+﻿<Window x:Class="StartProcessTime.Views.OpenProcessFile"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:StartProcessTime.Views"
+        mc:Ignorable="d"
+        Title="CreateTask" Height="247" Width="414">
+    <Grid x:Name="Grid1">
+        <Button x:Name="BTOpenFileDialog" Content="Выбирите файл" HorizontalAlignment="Left" Margin="25,10,0,0" VerticalAlignment="Top" Width="104" Click="BTOpenFileDialog_Click" FontSize="14"/>
+        <TextBox x:Name="PathTextBox" HorizontalAlignment="Left" Margin="147,9,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="239" Height="43"/>
+        <ComboBox x:Name="CBHour" HorizontalAlignment="Left" Margin="16,122,0,0" VerticalAlignment="Top" Width="120"/>
+        <ComboBox x:Name="CBMinute" HorizontalAlignment="Left" Margin="141,122,0,0" VerticalAlignment="Top" Width="120"/>
+        <ComboBox x:Name="CBSeconds" HorizontalAlignment="Left" Margin="266,122,0,0" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Часы" HorizontalAlignment="Left" Margin="50,96,0,0" VerticalAlignment="Top"/>
+        <Label Content="Минуты" HorizontalAlignment="Left" Margin="174,96,0,0" VerticalAlignment="Top"/>
+        <Label Content="Секунды" HorizontalAlignment="Left" Margin="292,96,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="BTClose" Content="Остановить" Margin="70,174,0,0" Height="21" VerticalAlignment="Top" HorizontalAlignment="Left" Width="74"/>
+        <Button x:Name="BTAdd" Content="Добавить процесс" Margin="266,174,0,0" HorizontalAlignment="Left" Width="120" Height="21" VerticalAlignment="Top" Click="BTAdd_Click"/>
+        <TextBox x:Name="TBDescription" HorizontalAlignment="Left" Margin="108,73,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="278" FontSize="14"/>
+        <Label Content="Описание:" HorizontalAlignment="Left" Margin="31,68,0,0" VerticalAlignment="Top" FontSize="14"/>
+    </Grid>
+</Window>
